@@ -1,6 +1,9 @@
 <<<<<<< HEAD
 # fourthbrain
 repo for fourthbrain exploration and projects
+
+202210 - Week 1 Prep:  get your MLE10 env set up  
+
 =======
 # Whodunit? 🕵️
 
