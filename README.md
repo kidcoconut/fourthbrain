@@ -1,5 +1,7 @@
+
 # fourthbrain
 repo for fourthbrain exploration and projects
+
 
 #--- week 1:  program structure and capstone overview
 - activities:
@@ -12,4 +14,6 @@ repo for fourthbrain exploration and projects
   - pandas, sklearn basics
 
 
+# naive-addition
+fourthbrain walkthrough of collaborative workflow 
 
