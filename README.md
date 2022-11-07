@@ -4,6 +4,15 @@
 </p>
 
 
+#--- week 2:  the big picture
+- AI product dev lifecycle, data-centric ai, ml project scoping and responsible AI principles
+- activities:
+  - building data-centric ai products
+  - deeplearning.ai the machine learning project lifecycle
+- assignment:
+  - review week2 slides
+  - analyze sentiment twitter
+
 
 # <h1 align="center" id="heading">Sentiment Analysis of Twitter Data</h1>
 
