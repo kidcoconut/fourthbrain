@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+#--- specific to fourthbrain
+./.assignments/week3_reddit/nb/secrets_reddit.py
+.scr_*.env
+
