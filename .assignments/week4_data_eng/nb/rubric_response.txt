@@ -1,0 +1,41 @@
+Algorithm Understanding
+
+>>>
+Feature selection methods are intended to reduce the number of input variables to those that are believed to be most useful to a model in order to predict the target variable. 
+What algorithms can be used to automatically select the most important features (regression, etc..)? 
+
+Q:  Describe at least 3?
+- Filter Methods:  typically used as a preprocessing step, and selection is based on statistical test scores wrt correlation with the target variable
+- Wrapper Methods:  this approach uses a subset of features and attempts to train and iteratively improve a model using them.  Iterative feature adds/removals are made based on what is learned or inferenced wrt performance from each step.  This method is relatively computationally expensive.
+- Embedded Methods:  this is a hybrid of the filter and wrapper approach.  Algorithms exist that can assist the MLE with built-in feature selection methods.
+
+
+
+>>>
+Q:  Explain data leakage and overfitting (define each)?  Explain the effect of data leakage and overfitting on the performance of an ML model.
+- Data Leakage is the term given when too much information about what you are trying to predict makes its way into the training data set.  One effect of data leakage is overfitting.
+- Overfitting is the term given when a model is designed to perform extremly well for the lab train/test data.  The false assumption is that the train/test data is perfectly representative of the real world. Because of this, the model unable to handle or adapt to real-world more generalized data, and the model fails.
+
+
+
+>>>
+Q:  Explain what our outliers in your data?
+Outliers are data points that differ significantly from other points in your data set.  They have the effect of skewing and/or misrepresenting the nature of the data.  They can mislead and impact the performance of the model.
+
+
+Q:  Explain at least two methods to deal/treat outliers in your data?
+Two methods of dealing with Outliers are:  removal and imputation/replacement.  It is generally not a good idea to remove data.  Regardless, it is a good idea to understand the context and nature of the data first to determine the potential impact of removal or replacement of data.  The objective is to improve data quality and end with a data set that is more representative that what you started with.  
+
+Removal extracts the outlier and value from the data set, whether it is a large, small, null, or other non-representative value.  Imputation leaves the data point intact, however changes its value to one that is more representative of the whole, such as the median or mean. 
+
+
+
+>>>
+Q:  What is feature scaling and why is it important to our model?
+Feature scaling is the practice, typically during data pre-processing, where the range of data values across all features are made more similar (eg between 0 and 1), in order to remove any feature domination effects due to the relative scale of values.  In order to understand which features or combination of features can be used to predict a target value/category, it is helpful to remove any scaling effects due to disparate value ranges across features. 
+
+
+Q:  Explain the difference between Normalization and Standardization?
+Normalization is a type of feature scaling where the values in the data set are adjusted so that it fits into a range between 0 and 1 (or sometimes 1, -1).  It is required when the data distribution is unknown or the data is not a Gaussian distribution
+
+Standardization is where the data set is reshaped so that the mean is zero and the std deviation equals 1.  As such, the upper and lower bounds for the data are not necessarily constrained. It best applies when the data is being used for multivariate analysis. 
