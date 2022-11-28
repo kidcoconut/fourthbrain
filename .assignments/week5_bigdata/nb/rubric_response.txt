@@ -1,0 +1,42 @@
+Algorithm Understanding
+
+>>>
+Q:  How does the Gradient-Boosted Tree Algorithm work in Classification? How does Gradient Boost differ from AdaBoost and Logistic Regression?
+
+For classification, Gradient Boosting uses decision trees to predict a target label.  It works on the principle that the results of many weak learners (ie shallow tree prediction models) can be combined together to make a more accurate predictor.  Each prediction model tries to successively improve the mistakes of the prior learner.  Boosting sequentially sums the weak learners and filters out those observations that a learner gets correct at each step.
+
+Gradient boosting improvised on some of the features of Adaboost to create a stronger more efficient algorithm.  Gradient boosting differs from AdaBoost as its decision trees are shallower and less complex.  It also does not use the weighted average of individual outputs as the final outputs.  Rather, it uses a loss function to minimize loss and converge upon the final output value.
+
+Gradient boosting is superior to Logistic Regression in a number of ways.  Logistic Regression is restricted to a binary logit (is vs is not), is harder to interpret the results, safer (less prone to error/misuse), and are comparitively poorer predictors.
+
+
+>>>
+Q:  What is a Delta Lake and how does it offer a solution to building reliable data pipelines?
+Delta Lake is a technology by Databricks and acts as an open storage layer above the OS and filesystem, and is compatible with the Apache Spark API. 
+
+The Delta Lake provides data lake reliability through data pipelines in a number of ways.  It provides ACID transactions, scalable metadata handling, and unifies streaming and batch data processing.  schema enforcement, and enhanced performance, scalability, and reliability.  
+
+For pipelines, the technology can support several accepted data pipeline methodologies, ie the continuous and incremental processing of (relatively) smaller data files, (through configuration) the unattended and automated watchdog detection and processing of new data files, and the methodology of curating and enhancing data throughout its bronze, silver, and gold business value lifecycle.  
+
+
+>>>
+Q:  When working with Pandas, we use the class pandas.core.frame.DataFrame and when working with the pandas API in Spark, we use the class pyspark.pandas.frame.DataFrame, are these the same, explain why or why not?
+
+These classes are not the same; they are not interchangeable.  The pandas class is better suited to run operations on a single machine, whereas the pyspark class is designed for larger ML datasets and parallel distributed operations on remote clusters across one or more nodes.  From a performance perspctive, Pyspark is designed to run operations orders of magnitude faster than Pandas. The pyspark class provides convenience methods/functions for Pandas operations but its capabilites far exceed that of the Pandas class alone.
+
+
+>>>
+Q:  What is a Machine Learning Pipeline is and why it’s important? What are the steps in a Machine Learning workflow?
+
+A machine learning pipeine is an end-to-end construct that orchestrates the flow of data into and the output from an ML model.  The pipeline is important as it helps to codify and automate the workflow required to manage the raw data input, the features, outputs, and development of the ML model, model parameters, and prediction outputs.  
+
+In an automated ML pipeline methodology, the pipeline itself is the end-product.  In contrast, a manual workflow has the model itself as the end-product. 
+
+The steps in a ML workflow include:  
+- business and data understanding (ideation and business case), feasibility analysis, POC
+- data engineering (feature selection, data selection, cleasing, feature engineering, data augmentation, data standardization)
+- ML Model Engineering (quality measures, algorithm selection, domain knowledge specialization, model training)
+- ML Model Evaluation (model validation, documentation)
+- Model Deployment (production evaluation, user acceptance, governance, deploy)
+- Model monitoring and maintenance (monitor efficiency, refinement, improvements, continuous re-integration, re-train, re-deploy)
+ 
