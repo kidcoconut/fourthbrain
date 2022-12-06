@@ -1,0 +1,40 @@
+>>> Algorithm Understanding
+Q: Is SVM (Support Vector Machine) a supervised or unsupervised learning algorithm?
+A: SVM is a supervised machine learnig algorithm that can be used for classification or regression problems.
+
+
+Q: Why is SVM such a powerful classification method?
+SVM is a powerful classification method;  it uses less computation, provides high stability (due to support vectors vs the data points), reliable results, has good accuracy, and does not necessarily require a lot of data. No assumptions are made on the datasets, and numerical predictions are well-suited to SVM.
+
+
+Q: What are 3 disadvantages of SVMs?
+- it is seen as a type of 'blackbox' approach
+- it has a tendency towards overfitting
+- requires relatively high computational effort
+
+
+>>> Interview Understanding
+Note:  n is the number of data points, and d is the number of dimensions in the data
+
+Q: What is the time complexity of SVM?
+A: The time complexity of SVM is O(n^2)
+
+Q: What is it for Logistic Regression?
+Time complexity of Logistic Regression is O(n*d) 
+
+
+
+
+>>> Interview Readiness
+Q: Explain feature importance for the Random Forest algorithm?
+A: Feature importance for a given model are those features that have the most relative influence on the target variable. 
+
+Q: When examining feature importance, what is Gini impurity or information gain?
+Gini impurity is a measurement used to construct Decision Trees.  It helps to determine how dataset features should be split into nodes to form the tree.  It is represented by a number between 0 and 0.5, which indicates the likelihood of new random data being misclassified.  The feature with the lowest imurity determines the best feature for splitting the current node. 
+
+Information Gain is similarly a metric used to train Decision Trees and helps to determine the quality of a node split.
+
+
+>>> Interview Readiness
+Q: SHAP (SHapley Additive exPlanations) is a game theoretic approach to explain the output of any machine learning model, what is it and how does it work?
+A: SHAP is a method to explain the contribution of each feature to the prediction.  SHAP helps to tell us how to fairly distribute the prediction across the contributing features, and how each feature is likely to relatively influence the overall target prediction. 
