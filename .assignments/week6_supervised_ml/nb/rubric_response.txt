@@ -4,13 +4,19 @@ A: SVM is a supervised machine learnig algorithm that can be used for classifica
 
 
 Q: Why is SVM such a powerful classification method?
-SVM is a powerful classification method;  it uses less computation, provides high stability (due to support vectors vs the data points), reliable results, has good accuracy, and does not necessarily require a lot of data. No assumptions are made on the datasets, and numerical predictions are well-suited to SVM.
+- SVM is a powerful classification method;  
+- it uses less computation for efficient implementations, 
+- provides high stability (due to requirement on few support vectors vs the data points), 
+- reliable results, 
+- has good accuracy, and 
+- does not necessarily require a lot of data. 
+- No assumptions are made on the datasets, and numerical predictions are well-suited to SVM.
 
 
 Q: What are 3 disadvantages of SVMs?
 - it is seen as a type of 'blackbox' approach
 - it has a tendency towards overfitting
-- requires relatively high computational effort
+- performs at O(N^3) at worst;  O(N^2) at best. Requires relatively high computational effort for large datasets
 
 
 >>> Interview Understanding
