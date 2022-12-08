@@ -1,4 +1,4 @@
-ipython==8.4.0
+#ipython==8.4.0        #--- colab reqs 7.9.0
 matplotlib==3.5.2
 numpy==1.23.1
 pandas==1.4.3
