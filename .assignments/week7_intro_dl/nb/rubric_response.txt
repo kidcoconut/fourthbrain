@@ -1,0 +1,53 @@
+>>> Note:  for assignment, only tasks 1-7 are required ...
+
+
+>>> Interview Readiness
+Q1:  What is Normalization and how does Normalization make training a model more stable?
+A1:  Normalization is a data preparation technique used to transform data (features) within the dataset to have a comparable scale.  Min Max Scaling is one method which imposes min and max bounds of 0 and 1 respectively, a mean of 0, and a standard deviation of 1.
+
+Normalization helps to make training a model more stable by improving the gradient descent converge to a value faster and reduces/eliminates overshoot.
+
+
+
+>>> Interview Readiness
+Q2:  What are loss and optimizer functions and how do they work?
+A2:  
+- A loss function evaluates how well your model performs compared to the truth.  A higher loss number indicates that your predictions are too erroneous.  A lower number indicaes that it is performing well, too low may indicate overfitting.
+
+- An optimizer function is used on a model to iteratively update the model parameters to reduce/minimize  loss, thereby maximizing model performance and reduced operation time.
+
+
+Q3:  What is Gradient Descent and how does it work?
+A3:  Gradient Descent is one example of an optimization function, it works by iteratively determining the next point on the curve (gradient descent), and determining the minimum achievable loss. The model parameter are also iteratively updated/refined for each step in the gradient descent.  
+
+
+
+>>> Interview Readiness
+Q4:  What is an activation function?
+A4:  An activation function mimics the stimulation of a biological neuron and for a neural network, defines the output of a neuron or node based on one or more inputs.   It is used to 'learn' the relationship(s) and to establish the weights between the inputs and outputs of neural layers. 
+
+
+
+Q5:  What are the outputs of the following activation functions: ReLU, Softmax Tanh, Sigmoid
+A5:  
+- ReLU:     For a Rectified Linear Unit activation function, any inputs less than 0 yield an output of 0. Positive inputs result in the same output, unchanged.
+
+- Softmax:  This activation function works across a layer of neurons, and distributes probabilities across all classes, which together sum to 1.
+
+- TanH:     This activation function takes the input range and scales/manipulates/constrains output to fall within the bounds of -1 and 1.  Inputs of zero outputs as a zero.
+
+- Sigmoid:  This activation function works similarly to the TanH function, but instead uses the bounds of 0 and 1. 
+
+
+
+>>> Algorithm Understanding
+Q6: What is the TPOT algorithm and how does it work?
+TPOT is a Python Automated Machine Learning tool that optimizes machine learning pipelines using genetic programming.  It compares the performance of multiple standardized models against the provided dataset.  Based on the performance and monitored accuracy of the results, TPOT will suggest/recommend the most appropriate (best-fit) model for feature engineering, and parameter optimization.  
+
+
+Q7:  What does TPOT stand for?
+A7:  TPOT stands for Tree-based Pipeline Optimization Tool. 
+
+
+
+
