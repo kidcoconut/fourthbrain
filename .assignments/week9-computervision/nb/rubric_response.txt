@@ -1,0 +1,73 @@
+
+This criterion is linked to a Learning Outcome
+
+>>> Algorithm Understanding
+Q1:  	How does Transfer Learning work? When to use Transfer Learning?
+A1:  	Transfer learning is a machine learning methodology whereby an existing pre-trained model is
+	selected and reused as the starting point for a different but related task.  This repurposing
+	of and existing model allows for more rapid development, and improved performance.
+
+	Traditional ML requires computationally expensive training with large data sets.  Conversely,
+	Transfer Learning can achieve better results using smaller data sets.  Transfer Learning is 
+	designed to leverage existing knowledge acquired through a pre-rained model, and applies it to
+	the new task at hand. 
+ 
+	There are several Transfer Learning strategies that determine how the implementation would work.
+	Thought is given to which part of the pre-existing model can be transferred to the new target. 
+	Additionally, how to most effectivel transfer as well as whether it is of value to transfer
+	are worthy questions as there is a chance that it may not improve the target performance.
+
+	The most simple example of how TL works is to replace the final layer(s) of the model pipeline
+	with newly trained layers more appropriate to the specific domain problem at hand.
+
+	Transfer Learning should be used when there is strong enough similarity and confidence in the
+	homogeneity of the feature space of the problem domain, and there is an computational advantage
+	in leveraging/applying the pre-existing model.
+
+>> Interview Readiness
+Q2:  	When training a Convolution Neural Network in the parameters what do each of the letters mean, for example NHWC?
+A2:  	When training a Convolution Neural Network, the letters mean as follows:
+
+	N:  batch size
+
+	For input tensors:
+	- H:  height
+	- W:  width
+	- C:  # of channels
+
+	For output tensors:
+	- P, Q, and K for height, width, and # of channels respectively
+
+	For filters:
+	- R, S for height, width respectively
+	- U, V for vertical and horizontal stride, respectively
+	  
+
+
+Q3:  	How does an SSD (single shot multi box detector) object detection model work?
+A3:  	Single shot multi box detection uses a single forward pass of the network to determine object 
+	localization and classification.  
+
+	SSD performs localization by distributing fixed sized bounding boxes, which match the
+	distribution of the ground truth boxes and where IOU is greatre than 0.5. SSD minimizes multibox
+	loss as a function of how confident (confidence loss) the network is of an object being within a
+	bounding box, and how far away the the network's predicted bounding box is from the ground truth
+	(location loss). SSD multibox retains the top bounding box predictions based on the loss results.
+
+	SSD then performs object classification on each predicted bounding box.  Class labels are assigned
+	based on the dataset of available class preditions.
+
+
+Q4:  	What is Intersection over Union and why do we use Intersection over Union (IOU)?
+A4: 	IOU is simply a relative measure of how overlapped two bounding boxes are.  As defined, for two
+	intersected bounding boxes, it is the calculation of their intersection area, divided by their 
+	overall union area.  Special care is required in the mathematical calculations to ensure that the 
+	intersected area is no double counted.  The relative measure (or ratio) ranges in value between 0
+	and 1.
+
+	IOU is used to provide a standard measure of how well (ie how accurate) the predicted bounding box
+	compares to the ground truth.  A value of 1 would indicate perfect congruence, whereas a value of 0
+	would indicate no overlap or intersection at all.  
+
+	The IOU is typically used in conjunction with an arbitrary human-set allowance threshold value, eg
+	0.5 
