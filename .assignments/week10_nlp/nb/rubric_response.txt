@@ -1,0 +1,62 @@
+
+>>> Algorithm Understanding
+Q1:  	How does the Naive Bayes Classifier work?
+A1:  	The Naive Bayes classifier is a probabilistic classifier that is based on Bayes' theorem. It
+ 	can be used for both binary and multiclass classification problems. The basic idea behind the
+	classifier is to use Bayes' theorem to calculate the probability of a class label given a set 
+	of features, and then choose the class label that has the highest probability.
+
+	The classifier starts by assuming that the features are conditionally independent given the class
+	label, which is the "naive" assumption. Under this assumption, Bayes' theorem can be used to
+	calculate the probability of a class label. 
+
+
+Q2:  	What is Posterior Probability?
+A2:	Posterior probability is the probability of an event occurring given that another event has 
+	occurred. In the context of Bayesian statistics, the event for which the probability is being 
+	calculated is called the "hypothesis" or "parameter," and the event that has occurred is called
+	the "data" or "evidence." The posterior probability is calculated using Bayes' theorem.
+
+
+
+>>> Interview Readiness
+Q3:  	What is the difference between stemming and lemmatization in NLP?
+A3:	Stemming and lemmatization are techniques used in natural language processing (NLP) to reduce 
+	words to their base form, known as the "stem" or "lemma." However, they are slightly different
+	techniques, used for different purposes.
+
+	Stemming is a crude method of reducing words to their base form by cutting off the end of the 
+	word, regardless of whether or not the resulting stem is a valid word. For example, the stemmer 
+	would reduce the words "running," "runner," and "ran" to the stem "run." This method is quick 
+	and simple, but it can produce non-existent words, which can be a problem for some applications.
+
+	Lemmatization is a more sophisticated method of reducing words to their base form, which takes 
+	into account the context and part of speech of the word. The goal of lemmatization is to produce 
+	a valid word that is in its base form, known as the "lemma". This is done by using a set of rules 
+	and a dictionary of words, which are used to look up the lemma of a given word. For example, the 
+	lemma of the word "running" would be "run," which is a valid word, and the lemma of the word 
+	"runner" would be "runner", which is also a valid word.
+
+
+Q4:  	What is Word2Vec and how does it work?
+A4:	Word2Vec is a model that is used to create numerical representations of words, called word 
+	embeddings that capture the context in which the words are used. It uses a neural network trained 
+	to predict context words for a given target word, and the embeddings of words that occur in similar 
+	contexts will be similar to each other. The embeddings can be used in a variety of NLP tasks
+
+
+Q5:  	When to use GRU over LSTM?
+A5:	LSTM and GRU are both types of recurrent neural networks that are used for processing sequential 
+	data, LSTM are more powerful but computationally more expensive than GRU, it's recommended to 
+	experiment with both architectures and compare the performance for your specific problem.
+
+	In general, LSTMs are more powerful than GRUs, but they are also more computationally expensive. 
+	LSTMs are typically used in cases where the complexity of the problem requires the ability to 
+	remember information for a long period of time, or where the data has a very long-term dependency.
+
+	GRUs are simpler and computationally less expensive than LSTMs, which makes them faster to train 
+	and use less memory. They are typically used in cases where the problem does not require the ability 
+	to remember information for a long period of time, or where the data has a relatively short-term dependency.
+
+
+
