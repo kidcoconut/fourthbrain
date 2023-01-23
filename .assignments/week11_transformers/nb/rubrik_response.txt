@@ -1,0 +1,86 @@
+
+>>> Algorithm Understanding
+
+
+Q1:  	In the transformer architecture in the paper "Attention Is All You Need", 
+	how does Multi-head Attention work?
+A1:	In transformer architecture, multi-head attention works by splitting the 
+	attention layer into multiple attention "heads", providing its Query, Key, 
+	and Value parameters N-ways.  
+
+	Each head is responsible for attending to a different part of the input 
+	sequence in parallel. The output of each head is concatenated and then passed 
+	through a final linear layer to produce the final attention output, the final 
+	attention score. 
+
+	There are three attention hyperparameters that help to determine the data 
+	dimensions:  Embedding Size, Query Size, and the Number of Attention heads.
+
+	Embedding Size represents the width of the embedding vector, and is carried 
+	forward throughout the Transformer model.  It is sometimes referred to as 
+	'model size', etc.
+
+	Query Size (equal to Key and Value size) represent the size of the weights 
+	used by the linear layers to produce the Query, Key, and Value matrices, 
+	respectively.
+
+	Number of Attention Heads (N) are self explanatory and represents the number 
+	of independant heads that work on the split Query, Key, and Value parameters.  
+
+	This architecture allows the model to attend to different parts of 
+	the input sequence in parallel, rather than having to attend to the entire 
+	sequence in one pass. This enables more efficient computation and also allows 
+	the model to attend to different aspects of the input sequence.
+
+
+
+
+>>> Interview Readiness
+Q2:	What is the main idea behind Positional Encoding?
+A2:	The main idea behind positional encoding in the transformer architecture is
+	to add and/or encode information about the position of each element (or token)
+	within the input sequence (eg words in a sentence).  
+
+	In the transformer, the input sequence is processed using self-attention. This
+	allows the model to focus on certain parts of the input while ignoring others. 
+	However, self-attention is based solely on the relationships between elements 
+	of the input, and does not take into account their specific position in the 
+	sequence.
+
+	Use of a scalar index (specific position) is problematic, particularly for 
+	long and/or variable length sequences.  Rather, positional encoding maps each 
+	position to a vector.  The output of the positional encoding layer is a matrix,
+	where each row represents an encoded object of the sequence together with its 
+	positional information.
+
+	By adding these positional encodings to the input, the transformer is able to 
+	take into account the position of each element, as well as its relationships 
+	with other elements, when making predictions.
+
+
+
+Q3:	What is EarlyStopping and why do we use it?
+A3:	EarlyStopping is a regularization technique that helps to prevent overfitting
+	by halting the training process when the performance of the model on the 
+	validation set stops improving.
+
+	We use it to assist the learner so as to make it better fit the training data
+	with each iteration.  EarlyStopping improves the learner's performance on data
+	outside of the training data set.
+
+	EarlyStopping allows for additional guidance to be provided, eg # of epochs, 
+	or iterations to be run before the learner is likely to over-fit. 
+
+
+Q4:	How would you explain what a transformer model is to business stakeholders 
+	(at a high level)?
+A4:	At a high level, a transformer is a proven and powerful tool for automating
+	or performing predictions on a wide range of business tasks involving language,
+	or time series data.
+
+	For example, it is well-suited to tasks such as automated customer service 
+	chatbots (text-only), dictation or summarization systems (speech to text), 
+	and ebook readers (text to speech).
+
+	They are fast, adaptive, surprisingly accurate, and can mimic, supplement or 
+	replace a number of traditionally manually-intensive, or error-prone human tasks. 
